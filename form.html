@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pemesanan - ONE FLORIST MEDAN</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Floating Social Media -->
+    <div class="social-floating">
+      <a
+        href="https://instagram.com/papanbungamedanoneflorist"
+        target="_blank"
+        class="social-icon"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a
+        href="https://facebook.com/SarenRaz"
+        target="_blank"
+        class="social-icon"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="mailto:sarenraz992@gmail.com" class="social-icon"
+        ><i class="far fa-envelope"></i
+      ></a>
+      <a href="https://wa.me/6285215615701" class="social-icon whatsapp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <img src="images/logo.png" alt="ONE FLORIST MEDAN" />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html">Katalog</a></li>
+          <li><a href="form.html" class="active">Pesan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Form Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-aos="fade-up">Form Pemesanan</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Isi form berikut untuk memesan papan bunga
+        </p>
+      </div>
+    </section>
+
+    <!-- Order Form -->
+    <section class="order-form-section">
+      <div class="container">
+        <div class="form-container" data-aos="fade-up">
+          <form id="flowerOrderForm">
+            <div class="form-group">
+              <label for="name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Masukkan nama lengkap Anda"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Nomor WhatsApp</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Contoh: 082163354468"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email (Opsional)</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Contoh: email@domain.com"
+              />
+            </div>
+            <div class="form-group">
+              <label for="product">Jenis Papan Bunga</label>
+              <select id="product" name="product" required>
+                <option value="">Pilih produk</option>
+                <option value="Papan Bunga Standar">
+                  Papan Bunga Standar - Rp250.000
+                </option>
+                <option value="Papan Bunga 1 Mahkota">
+                  Papan Bunga 1 Mahkota - Rp300.000
+                </option>
+                <option value="Papan Bunga 2 Mahkota">
+                  Papan Bunga 2 Mahkota - Rp350.000
+                </option>
+                <option value="Papan Bunga 3 Mahkota">
+                  Papan Bunga 3 Mahkota - Rp500.000
+                </option>
+                <option value="Papan Bunga 4 Mahkota">
+                  Papan Bunga 4 Mahkota - Rp600.000
+                </option>
+                <option value="Papan Bunga 5 Mahkota">
+                  Papan Bunga 5 Mahkota - Rp700.000
+                </option>
+                <option value="Papan Bunga 8 Mahkota">
+                  Papan Bunga 8 Mahkota - Rp1.000.000
+                </option>
+                <option value="Papan Bunga Full Anggrek">
+                  Papan Bunga Full Anggrek - Rp750.000
+                </option>
+                <option value="Custom Design">
+                  Custom Design (Konsultasi)
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="event-date">Tanggal Acara/Pengiriman</label>
+              <input type="date" id="event-date" name="event-date" required />
+            </div>
+            <div class="form-group">
+              <label for="address">Alamat Pengiriman</label>
+              <textarea
+                id="address"
+                name="address"
+                rows="3"
+                required
+                placeholder="Masukkan alamat lengkap pengiriman"
+              ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan Tambahan</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                maxlength="500"
+                placeholder="Masukkan pesan tambahan (maksimal 500 karakter)"
+              ></textarea>
+              <div class="char-counter">
+                <span id="char-count">0</span>/500 karakter
+              </div>
+            </div>
+            <div class="form-submit">
+              <button type="submit" class="btn-gold">Kirim Pesanan</button>
+            </div>
+          </form>
+          <div class="form-sidebar">
+            <h3>Informasi Penting</h3>
+            <div class="info-box">
+              <i class="fas fa-info-circle"></i>
+              <p>Pastikan nomor WhatsApp aktif untuk konfirmasi pesanan</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-truck"></i>
+              <p>Pengiriman gratis untuk wilayah Medan dan sekitarnya</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-clock"></i>
+              <p>Pemesanan H-2 untuk memastikan ketersediaan produk</p>
+            </div>
+            <div class="info-box">
+              <i class="fas fa-phone"></i>
+              <p>
+                Butuh bantuan? Hubungi kami di
+                <a href="tel:085215615701">0852-1561-5701</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WhatsApp CTA -->
+    <section class="whatsapp-cta">
+      <div class="container">
+        <div class="whatsapp-content" data-aos="fade-up">
+          <div class="whatsapp-icon">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <div class="whatsapp-text">
+            <h3>Lebih Nyaman Chat via WhatsApp?</h3>
+            <p>Klik tombol di bawah untuk langsung terhubung dengan kami</p>
+          </div>
+          <div class="whatsapp-button">
+            <a
+              href="https://wa.me/6285215615701?text=Halo%20ONE%20FLORIST%20MEDAN,%20saya%20ingin%20bertanya%20tentang%20produk%20Anda"
+              class="btn-gold"
+              >Chat Sekarang</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>ONE FLORIST MEDAN</h3>
+          <p>
+            Spesialis papan bunga dan rangkaian bunga segar untuk berbagai acara
+            di Medan dan sekitarnya.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com/papanbungamedanoneflorist"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com/SarenRaz"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="mailto:sarenraz992@gmail.com"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="form.html">Pemesanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak Kami</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> JL. SEI SERAYU NO 113 MEDAN
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:085215615701">0852-1561-5701</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sarenraz992@gmail.com">sarenraz992@gmail.com</a>
+          </p>
+          <p><i class="fas fa-clock"></i> Buka 24 Jam</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ONE FLORIST MEDAN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      // Character counter for message textarea
+      const messageTextarea = document.getElementById("message");
+      const charCount = document.getElementById("char-count");
+
+      messageTextarea.addEventListener("input", function () {
+        const currentLength = this.value.length;
+        charCount.textContent = currentLength;
+
+        if (currentLength > 500) {
+          this.value = this.value.substring(0, 500);
+          charCount.textContent = 500;
+        }
+      });
+
+      // Form submission
+      document
+        .getElementById("flowerOrderForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const phone = document.getElementById("phone").value;
+          const product = document.getElementById("product").value;
+          const date = document.getElementById("event-date").value;
+          const address = document.getElementById("address").value;
+          const message = document.getElementById("message").value;
+
+          const whatsappMessage = `Halo ONE FLORIST MEDAN, saya ingin memesan:\n\nNama: ${name}\nProduk: ${product}\nTanggal Acara: ${date}\nAlamat: ${address}\nPesan Tambahan: ${
+            message || "-"
+          }`;
+
+          window.open(
+            `https://wa.me/085215615701?text=${encodeURIComponent(
+              whatsappMessage
+            )}`,
+            "_blank"
+          );
+        });
+    </script>
+  </body>
+</html>

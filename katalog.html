@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Produk - ONE FLORIST MEDAN</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Floating Social Media -->
+    <div class="social-floating">
+      <a
+        href="https://instagram.com/papanbungamedan_one"
+        target="_blank"
+        class="social-icon"
+        ><i class="fab fa-instagram"></i
+      ></a>
+      <a
+        href="https://facebook.com/SarenRaz"
+        target="_blank"
+        class="social-icon"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+      <a href="mailto:sarenraz992@gmail.com" class="social-icon"
+        ><i class="far fa-envelope"></i
+      ></a>
+      <a href="https://wa.me/6285215615701" class="social-icon whatsapp"
+        ><i class="fab fa-whatsapp"></i
+      ></a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+      <div class="nav-container">
+        <div class="logo">
+          <img
+            src="images/logo.png"
+            alt="ONE FLORIST MEDAN"
+            width="150"
+            height="350"
+          />
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="katalog.html" class="active">Katalog</a></li>
+          <li><a href="form.html">Pesan</a></li>
+          <li><a href="galeri.html">Galeri</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Catalog Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 data-aos="fade-up">Katalog Produk</h1>
+        <p data-aos="fade-up" data-aos-delay="200">
+          Pilih papan bunga sesuai kebutuhan acara Anda
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Filter -->
+    <section class="product-filter">
+      <div class="container">
+        <div class="filter-container" data-aos="fade-up">
+          <div class="search-box">
+            <input type="text" placeholder="Cari produk..." />
+            <button><i class="fas fa-search"></i></button>
+          </div>
+          <div class="filter-options">
+            <select id="category-filter">
+              <option value="all">Semua Kategori</option>
+              <option value="wedding">Pernikahan</option>
+              <option value="birthday">Ulang Tahun</option>
+              <option value="condolence">Duka Cita</option>
+              <option value="anniversary">Anniversary</option>
+            </select>
+            <select id="price-filter">
+              <option value="all">Semua Harga</option>
+              <option value="0-500">Rp0 - Rp500.000</option>
+              <option value="500-1000">Rp500.000 - Rp1.000.000</option>
+              <option value="1000+">> Rp1.000.000</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="product-grid-section">
+      <div class="container">
+        <div class="product-grid">
+          <!-- Product 1 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary"
+            data-price="750"
+            data-aos="fade-up"
+            id="full-anggrek"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product1.jpg"
+                alt="Papan Bunga Full Anggrek"
+              />
+              <div class="product-badge">Best Seller</div>
+              <div class="product-overlay">
+                <a
+                  href="#full-anggrek-details"
+                  class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga Full Anggrek</h3>
+              <p class="product-desc">
+                Dihiasi bunga anggrek di seluruh bidang papan dengan bonus 1
+                mahkota
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp750.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%20Full%20Anggrek"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div
+            class="product-item"
+            data-category="wedding birthday anniversary"
+            data-price="350"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            id="1-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product2.jpg"
+                alt="Papan Bunga 1 Mahkota"
+              />
+              <div class="product-overlay">
+                <a href="#2-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 1 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 1 rangkaian bunga mahkota artifisial premium
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp300.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%202%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary"
+            data-price="300"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="1-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product3.jpg"
+                alt="Papan Bunga 2 Mahkota"
+              />
+              <div class="product-overlay">
+                <a href="#2-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 2 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 2 rangkaian bunga mahkota di atas papan
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp350.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%201%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 4 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary condolence"
+            data-price="500"
+            data-aos="fade-up"
+            id="3-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product4.jpg"
+                alt="Papan Bunga 3 Mahkota"
+              />
+              <div class="product-overlay">
+                <a href="#3-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 3 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 3 rangkaian bunga mahkota artifisial premium
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp500.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%203%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 5 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary"
+            data-price="600"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            id="4-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product5.jpg"
+                alt="Papan Bunga 4 Mahkota"
+              />
+              <div class="product-overlay">
+                <a href="#4-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 4 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 4 rangkaian bunga mahkota artifisial premium
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp600.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%204%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 6 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary"
+            data-price="700"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            id="5-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product6.jpg"
+                alt="Papan Bunga 5 Mahkota"
+              />
+              <div class="product-overlay">
+                <a href="#5-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 5 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 5 rangkaian bunga mahkota artifisial premium
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp700.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%205%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 7 -->
+          <div
+            class="product-item"
+            data-category="wedding"
+            data-price="1000"
+            data-aos="fade-up"
+            id="8-mahkota"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product7.jpg"
+                alt="Papan Bunga 8 Mahkota"
+              />
+              <div class="product-badge">New</div>
+              <div class="product-overlay">
+                <a href="#8-mahkota-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga 8 Mahkota</h3>
+              <p class="product-desc">
+                Dengan 8 rangkaian bunga mahkota artifisial premium
+              </p>
+              <div class="product-meta">
+                <span class="price">Rp1.000.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%208%20Mahkota"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Product 8 -->
+          <div
+            class="product-item"
+            data-category="wedding anniversary condolence"
+            data-price="250"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            id="standar"
+          >
+            <div class="product-image">
+              <img
+                src="images/product/product8.jpg"
+                alt="Papan Bunga Kualitas Sedang"
+              />
+              <div class="product-overlay">
+                <a href="#standar-details" class="btn-gold lightbox-trigger"
+                  >Quick View</a
+                >
+              </div>
+            </div>
+            <div class="product-info">
+              <h3>Papan Bunga Kualitas Sedang</h3>
+              <p class="product-desc">Papan bunga gandeng ukuran super jumbo</p>
+              <div class="product-meta">
+                <span class="price">Rp250.000</span>
+                <a
+                  href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%20Standar"
+                  class="btn-outline"
+                  >Pesan</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Details Lightboxes -->
+    <!-- Full Anggrek -->
+    <div id="full-anggrek-details" class="lightbox">
+      <div class="lightbox-content">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-container">
+          <div class="lightbox-image">
+            <img
+              src="images/product/product1-large.jpg"
+              alt="Papan Bunga Full Anggrek"
+            />
+          </div>
+          <div class="lightbox-info">
+            <h2>Papan Bunga Full Anggrek</h2>
+            <p class="price">Rp750.000</p>
+            <div class="product-specs">
+              <p><strong>Ukuran:</strong> 6 m x 18 m</p>
+              <p>
+                <strong>Bahan:</strong> Kain Jennifer berkualitas super, bunga
+                suyok Carnation import, bunga anggrek di seluruh bidang papan
+              </p>
+              <p>
+                <strong>Bonus:</strong> 1 rangkaian bunga mahkota artifisial
+              </p>
+              <p><strong>Pengiriman:</strong> Gratis seluruh Medan</p>
+            </div>
+            <div class="lightbox-actions">
+              <a
+                href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%20Full%20Anggrek"
+                class="btn-gold"
+                >Pesan Sekarang</a
+              >
+              <a href="form.html" class="btn-outline">Isi Form Pemesanan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2 Mahkota -->
+    <div id="2-mahkota-details" class="lightbox">
+      <div class="lightbox-content">
+        <span class="close-lightbox">&times;</span>
+        <div class="lightbox-container">
+          <div class="lightbox-image">
+            <img
+              src="images/product/product2-large.jpg"
+              alt="Papan Bunga 2 Mahkota"
+            />
+          </div>
+          <div class="lightbox-info">
+            <h2>Papan Bunga 2 Mahkota</h2>
+            <p class="price">Rp350.000</p>
+            <div class="product-specs">
+              <p><strong>Ukuran:</strong> 6 m x 18 m</p>
+              <p>
+                <strong>Bahan:</strong> Kain Jennifer berkualitas super, bunga
+                suyok Carnation import
+              </p>
+              <p>
+                <strong>Bonus:</strong> 2 rangkaian bunga mahkota premium (atas
+                dan bawah)
+              </p>
+              <p><strong>Pengiriman:</strong> Gratis seluruh Medan</p>
+            </div>
+            <div class="lightbox-actions">
+              <a
+                href="https://wa.me/6285215615701?text=Saya%20ingin%20memesan%20Papan%20Bunga%202%20Mahkota"
+                class="btn-gold"
+                >Pesan Sekarang</a
+              >
+              <a href="form.html" class="btn-outline">Isi Form Pemesanan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add similar lightboxes for other products -->
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content" data-aos="fade-up">
+          <h2>Tidak Menemukan Yang Anda Cari?</h2>
+          <p>Kami bisa membuat custom desain sesuai kebutuhan Anda</p>
+          <div class="cta-buttons">
+            <a href="kontak.html" class="btn-gold">Konsultasi Desain</a>
+            <a href="https://wa.me/6285215615701" class="btn-outline"
+              >Chat via WhatsApp</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>ONE FLORIST MEDAN</h3>
+          <p>
+            Spesialis papan bunga dan rangkaian bunga segar untuk berbagai acara
+            di Medan dan sekitarnya.
+          </p>
+          <div class="footer-social">
+            <a href="https://instagram.com/papanbungamedan_one"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="https://facebook.com/SarenRaz"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="mailto:sarenraz992@gmail.com"
+              ><i class="far fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="katalog.html">Katalog</a></li>
+            <li><a href="form.html">Pemesanan</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Kontak Kami</h3>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> JL. SEI SERAYU NO 113 MEDAN
+          </p>
+          <p>
+            <i class="fas fa-phone"></i>
+            <a href="tel:6285215615701">0852-1561-5701</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:sarenraz992@gmail.com">sarenraz992@gmail.com</a>
+          </p>
+          <p><i class="fas fa-clock"></i> Buka 24 Jam</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ONE FLORIST MEDAN. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+    </script>
+  </body>
+</html>
